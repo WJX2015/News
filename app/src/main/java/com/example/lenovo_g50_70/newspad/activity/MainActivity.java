@@ -58,6 +58,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         jokeLayout.setOnClickListener(this);
         weatherLayout.setOnClickListener(this);
         mineLayout.setOnClickListener(this);
+        newsLayout.setSelected(true);//默认主页字体图片均为红色
     }
 
     @Override
@@ -66,15 +67,32 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 hide(mFragments[1]).hide(mFragments[2]).hide(mFragments[3]);
         switch (v.getId()) {
             case R.id.news_layout:
+                //设置点击按钮后，文字和图片颜色的变换
+                this.newsLayout.setSelected(true);//设置选择器
+                this.jokeLayout.setSelected(false);
+                this.weatherLayout.setSelected(false);
+                this.mineLayout.setSelected(false);
                 fragmentTransaction.show(mFragments[0]).commit();//显示第一fragment
                 break;
             case R.id.joke_layout:
+                this.newsLayout.setSelected(false);
+                this.jokeLayout.setSelected(true);
+                this.weatherLayout.setSelected(false);
+                this.mineLayout.setSelected(false);
                 fragmentTransaction.show(mFragments[1]).commit();//显示第二fragment
                 break;
             case R.id.weather_layout:
+                this.newsLayout.setSelected(false);
+                this.jokeLayout.setSelected(false);
+                this.weatherLayout.setSelected(true);
+                this.mineLayout.setSelected(false);
                 fragmentTransaction.show(mFragments[2]).commit();//显示第三fragment
                 break;
             case R.id.mine_layout:
+                this.newsLayout.setSelected(false);
+                this.jokeLayout.setSelected(false);
+                this.weatherLayout.setSelected(false);
+                this.mineLayout.setSelected(true);
                 fragmentTransaction.show(mFragments[3]).commit();//显示第四fragment
                 break;
         }

@@ -2,116 +2,116 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
-              android:orientation="vertical">
+              android:gravity="center"
+              android:orientation="horizontal">
+
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:id="@+id/news_layout"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:clickable="true"
         android:gravity="center"
-        android:orientation="horizontal">
+        android:orientation="vertical">
 
-        <LinearLayout
-            android:id="@+id/news_layout"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:clickable="true"
-            android:gravity="center"
-            android:orientation="vertical">
+        <ImageButton
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@drawable/tab_zhuye"
+            android:clickable="false"
+            android:duplicateParentState="true"
+            />
 
-            <ImageButton
-                android:layout_width="32dp"
-                android:layout_height="32dp"
-                android:background="@drawable/zhuye_white"
-                android:clickable="false"
-                android:duplicateParentState="true"
-                />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:clickable="false"
-                android:duplicateParentState="true"
-                android:text="首页"
-                />
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/joke_layout"
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:clickable="true"
-            android:gravity="center"
-            android:orientation="vertical">
-
-            <ImageButton
-                android:layout_width="32dp"
-                android:layout_height="32dp"
-                android:background="@drawable/joke_white"
-                android:clickable="false"
-                android:duplicateParentState="true"
-                />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:clickable="false"
-                android:duplicateParentState="true"
-                android:text="笑话"
-                />
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/weather_layout"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:clickable="true"
-            android:gravity="center"
-            android:orientation="vertical">
-
-            <ImageButton
-                android:layout_width="32dp"
-                android:layout_height="32dp"
-                android:background="@drawable/weather_white"
-                android:clickable="false"
-                android:duplicateParentState="true"
-                />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:clickable="false"
-                android:duplicateParentState="true"
-                android:text="天气"
-                />
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/mine_layout"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:clickable="true"
-            android:gravity="center"
-            android:orientation="vertical">
-
-            <ImageButton
-                android:layout_width="32dp"
-                android:layout_height="32dp"
-                android:background="@drawable/mine_white"
-                android:clickable="false"
-                android:duplicateParentState="true"
-                />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:clickable="false"
-                android:duplicateParentState="true"
-                android:text="我的"
-                />
-        </LinearLayout>
+            android:clickable="false"
+            android:duplicateParentState="true"
+            android:text="主页"
+            android:textColor="@drawable/tab_text_color"
+            />
     </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/joke_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@drawable/tab_joke"
+            android:clickable="false"
+            android:duplicateParentState="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:duplicateParentState="true"
+            android:text="笑话"
+            android:textColor="@drawable/tab_text_color"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/weather_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@drawable/tab_weather"
+            android:clickable="false"
+            android:duplicateParentState="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:duplicateParentState="true"
+            android:text="天气"
+            android:textColor="@drawable/tab_text_color"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mine_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@drawable/tab_mine"
+            android:clickable="false"
+            android:duplicateParentState="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:duplicateParentState="true"
+            android:text="我的"
+            android:textColor="@drawable/tab_text_color"
+            />
+    </LinearLayout>
+
 </LinearLayout>
