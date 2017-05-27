@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:background="#fff"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <android.support.design.widget.TabLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#eee"
+        app:tabGravity="center"
+        app:tabIndicatorColor="#24C026"
+        app:tabIndicatorHeight="1dp"
+        app:tabMode="scrollable"
+        app:tabSelectedTextColor="#24C026"
+        app:tabTextColor="#000000"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>
+        <!--
+        tabIndicatorHeight：Tab指示器下标的高度
+        tabGravity：Tab内容的显示模式
+        tabMode：Tab的展示模式
+        fixed（默认）：固定的，标签很多时候会被挤压，不能滑动
+        scrollable：可滚动的，标签多的时候可滚动
+        tabIndicatorColor：Tab指示器下标的颜色
+        tabSelectedTextColor：Tab文字被选中的颜色
+        tabTextColor：Tab文字的颜色
+        -->
