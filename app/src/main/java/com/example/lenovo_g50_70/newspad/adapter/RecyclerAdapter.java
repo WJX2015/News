@@ -66,7 +66,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.MyView
                 intent.putExtra("KEY",news.getUniquekey());
                 intent.putExtra("TITLE",news.getTitle());
                 mContext.startActivity(intent);
-                ((Activity) mContext).overridePendingTransition(R.anim.slide_in_left,R.anim.slide_out_right);
+                ((Activity) mContext).overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_left);
             }
         });
         return holder;

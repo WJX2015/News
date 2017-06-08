@@ -27,7 +27,7 @@ import okhttp3.Response;
 
 
 /**
- * 主界面的内容
+ * 显示MainFragment中的内容
  * Created by lenovo-G50-70 on 2017/3/30.
  */
 
